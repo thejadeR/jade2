@@ -1,0 +1,103 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+     {% block title %}
+         <title>JadeJade - 首页</title>
+     {% endblock %}
+
+
+    {% block suncss %}
+
+    {% endblock %}
+
+
+ {% block sunbody %}
+
+
+    <h1 id="title">JadeJade</h1>
+    <ul class="ms_list">
+        <li class="sousuo">
+
+                <form action="{% url 'jade:sousuo' %}">
+                        <p><input type="search" name="words"><input type="submit" value="搜索"></p>
+                </form>
+
+        </li>
+        {#        {% for music in musics %}#}
+        {#            <li class="themusic">#}
+        {#                <p data-title="{{ music.title }}" data-src="{{ music.thesrc }}">{{ music.title }}<span class="toplay">播放</span></p>#}
+        {#            </li>#}
+        {#    /static/upload/index/{{ music.thesrc }}#}
+        {#        {% endfor %}#}
+        {% for music in musics %}
+            <li>
+                <p class="themusic" data-id="{{ music.id }}" data-title="{{ music.title }}" data-src="{{ music.thesrc }}">{{ music.title }}<span class="toplay" >{{ music.file_size }}</span></p>
+                <a href="javascript:;" class="todel" id="thedel">删除</a>
+            <li>
+        {% endfor %}
+        <li class="zhanwei"></li>
+       <li class="zhanwei"><p><a href="{% url 'jade:index' %}">返回首页</a></p></li>
+        <li class="zhanwei"><p><a href="{% url 'jade:xiagu' %}">峽谷之音</a></p></li>
+        <li class="zhanwei"><p>公告：搜索功能正在完善中</p></li>
+        <li class="zhanwei"><p>提示：音乐平台有的就别上传啦</p></li>
+        <li class="zhanwei"><p><button class="thebt" id="sctupian">上传音乐</button></p></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+    </ul>
+
+    <div id="indexfoot">
+
+        <p class="now_play">正在播放：</p>
+        <p class="ms_title"></p>
+
+        <div class="the_audio">
+            <audio controls>
+                <source src="/static/upload/index/双笙 - 我的一个道姑朋友.mp3" type="audio/mpeg" class="ms_src">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+
+    </div>
+
+     <div id="mengban">
+         <form action="{% url 'jade:sc_music' %}" enctype="multipart/form-data" method="post">
+             {% csrf_token %}
+
+             <p><input type="file" name="themusic"></p>
+             <p><input type="text" placeholder="给音乐起个名字吧" name="music_name"></p>
+
+
+             <p><input type="submit" value="提交"></p>
+             <p><input type="button" id="tocancel" value="取消"></p>
+
+         </form>
+     </div>
+
+
+     <div id="mengban2">
+         <form action="">
+{#             {% csrf_token %}#}
+             <p>请输入管理员密码：</p>
+             <p> <input type="password"id="passwd"></p>
+
+             <p class="tips"></p>
+
+             <p><input type="button" value="提交" class="tijiao"></p>
+             <p><input type="button" id="tocancel2" value="取消"></p>
+
+         </form>
+     </div>
+ {% endblock %}
+
+
+
+
+
+{% block sunjs %}
+<script type="application/javascript" src="{% static 'js/themusic.js' %}"></script>
+{% endblock %}

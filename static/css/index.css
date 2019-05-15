@@ -1,0 +1,197 @@
+
+
+
+#box
+{
+    width: 100%;
+    height: 100%;
+    /*background-color: ghostwhite;*/
+
+}
+
+#indexfoot
+{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+
+#foot
+{
+    background-color: black;
+    position: fixed;
+    bottom: 55px;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+
+/*頁腳*/
+#foot2
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#foot2 li
+{
+    float: left;
+    width: 23.8%;
+    height: 100%;
+    text-align: center;
+    border-radius: 2px;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 104, 107);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-family: 微软雅黑;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: 0px;
+    transition: all 0.2s ease-out 0s;
+}
+
+#foot2 a
+{
+    text-decoration: none;
+    color: aquamarine;
+    height: 100%;
+    line-height: 100%;
+    display: block;
+    padding-top: 20%;
+
+}
+
+#title,.now_play,.ms_title
+{
+    text-align: center;
+    color: aquamarine;
+}
+
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid pink;
+    background-color: ghostwhite;
+}
+li
+{
+    border: pink solid 1px;
+}
+
+.zhanwei
+{
+    height: 55px;
+}
+
+.ms_list p
+{
+    text-align: center;
+    color: deeppink;
+    cursor: pointer;
+}
+.toplay
+{
+    float: right;
+    cursor: pointer;
+    color: aquamarine;
+}
+
+
+.foot_active
+{
+    background-color: ghostwhite !important;
+
+}
+
+.thebt
+{
+    color: aquamarine;
+    /*background-color: deeppink;*/
+	width:90px;
+	height:40px;
+}
+
+/*.indexbt*/
+/*{*/
+    /*color: aquamarine;*/
+    /*!*background-color: deeppink;*!*/
+	/*width:90px;*/
+	/*height:40px; */
+/*}*/
+
+#mengban
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#mengban form
+{
+
+    border: gainsboro solid 1px;
+    background-color: ghostwhite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#mengban2
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#mengban2 form
+{
+
+    border: gainsboro solid 1px;
+    background-color: ghostwhite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#thedel{
+    cursor: pointer;
+    color: aquamarine;
+    /*float: right;*/
+}

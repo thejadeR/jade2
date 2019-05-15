@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    {% block title %}
+
+    {% endblock %}
+
+
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    {% block suncss %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+<div id="box">
+
+    {% block sunbody %}
+
+    {% endblock %}
+
+
+
+
+    <ul id="foot2">
+        <li><a href="{% url 'jade:index' %}">音乐</a></li>
+        <li><a href="{% url 'jade:duanzi' %}">段子</a></li>
+        <li><a href="{% url 'jade:tupian' %}">图片</a></li>
+        <li><a href="{% url 'jade:liuyanban' %}">留言板</a></li>
+    </ul>
+
+</div>
+
+
+<script type="application/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'js/jquery.cookie.js' %}"></script>
+<script type="application/javascript" src="{% static 'js/index.js' %}"></script>
+
+
+{% block sunjs %}
+
+{% endblock %}
+</body>
+</html>

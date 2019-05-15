@@ -1,0 +1,84 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+    <title>JadeJade - 留言板</title>
+{% endblock %}
+
+
+{% block suncss %}
+    <link rel="stylesheet" href="{% static 'css/liuyanban.css' %}">
+{% endblock %}
+
+
+
+
+{% block sunbody %}
+
+
+    <h1 id="title">留言板</h1>
+    <ul class="ms_list">
+        {% for liuyanban in liuyanbans %}
+            <li>
+                <p>{{ liuyanban.lyTime }}</p>
+                <p class="themusic" data-id="{{ liuyanban.id }}">{{ liuyanban.lyb_context }}</p>
+                <a href="javascript:;" class="todel" id="thedel">删除</a>
+            </li>
+        {% endfor %}
+
+        <li class="zhanwei"></li>
+        <li class="zhanwei"><p>公告：我跟管理猿有话说</p></li>
+        <li class="zhanwei"><p>公告：本网页由JadeJade原创，联系JadeJade QQ:1056497498</p></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+    </ul>
+
+    <div id="foot">
+
+        <button class="thebt" id="scliuyan">我要留言</button>
+
+
+    </div>
+
+
+    <div id="mengban">
+        <form action="{% url 'jade:sc_liuyanban' %}">
+
+
+            <p><textarea rows="10" cols="30" name="liuyan"></textarea></p>
+            <p><input type="submit" value="提交"></p>
+            <p><input type="button" id="tocancel" value="取消"></p>
+
+        </form>
+    </div>
+
+
+
+
+    <div id="mengban2">
+        <form action="">
+
+            <p>请输入管理员密码：</p>
+            <p><input type="password" id="passwd"></p>
+
+            <p class="tips"></p>
+
+            <p><input type="button" value="提交" class="tijiao"></p>
+            <p><input type="button" id="tocancel2" value="取消"></p>
+
+        </form>
+    </div>
+
+
+{% endblock %}
+
+
+
+
+
+{% block sunjs %}
+    <script type="application/javascript" src="{% static 'js/liuyanban.js' %}"></script>
+{% endblock %}

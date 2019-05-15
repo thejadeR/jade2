@@ -1,0 +1,87 @@
+{% extends 'index.html' %}
+{% load static %}
+
+     {% block title %}
+         <title>JadeJade - 段子</title>
+     {% endblock %}
+
+
+    {% block suncss %}
+
+
+    <link rel="stylesheet" href="{% static 'css/duanzi.css' %}">
+
+    {% endblock %}
+
+
+
+
+ {% block sunbody %}
+
+
+    <h1 id="title">段子</h1>
+    <ul class="ms_list">
+
+        {% for duanzi in duanzis %}
+            <li>
+                <p class="themusic" data-id="{{ duanzi.id }}" >{{ duanzi.duanzi_context }}</p>
+                <a href="javascript:;" class="todel" id="thedel">删除</a>
+
+            </li>
+        {% endfor %}
+
+
+        <li class="zhanwei"></li>
+        <li class="zhanwei"><p>公告：暫時沒有更多的段子喲...</p></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+
+    </ul>
+
+        <div id="foot">
+
+        <button class="thebt" id="scduanzi">上传段子</button>
+
+
+        </div>
+
+
+
+     <div id="mengban">
+         <form action="{% url 'jade:sc_duanzi' %}">
+{#             {% csrf_token %}#}
+{#             <p> <input type="" name="duanzi_title"></p>#}
+             <p><textarea rows="10" cols="30" name="duanzi"></textarea></p>
+             <p><input type="submit" value="提交"></p>
+             <p><input type="button" id="tocancel" value="取消"></p>
+
+         </form>
+     </div>
+
+
+     <div id="mengban2">
+         <form action="">
+{#             {% csrf_token %}#}
+             <p>请输入管理员密码：</p>
+             <p> <input type="password"id="passwd"></p>
+
+             <p class="tips"></p>
+
+             <p><input type="button" value="提交" class="tijiao"></p>
+             <p><input type="button" id="tocancel2" value="取消"></p>
+
+         </form>
+     </div>
+
+ {% endblock %}
+
+
+
+
+
+{% block sunjs %}
+<script type="application/javascript" src="{% static 'js/duanzi.js' %}"></script>
+{% endblock %}

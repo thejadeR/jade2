@@ -1,0 +1,83 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+     {% block title %}
+         <title>JadeJade - 图片</title>
+     {% endblock %}
+
+
+    {% block suncss %}
+ <link rel="stylesheet" href="{% static 'css/tupian.css' %}">
+    {% endblock %}
+
+
+
+
+ {% block sunbody %}
+
+
+    <h1 id="title">图片</h1>
+    <ul class="ms_list">
+
+        {% for tupian in tupians %}
+            <li>
+                <p>{{ tupian.title }}</p>
+                <img src="/static/upload/imgDir/{{ tupian.imgsrc }} " alt="圖片不見了" data-id="{{ tupian.id }}">
+                <a href="javascript:;" class="todel" id="thedel">删除</a>
+            </li>
+        {% endfor %}
+    
+        <li class="zhanwei"></li>
+        <li class="zhanwei"><p>公告：四个T的图片表示不服，立即上传</p></li>
+        <li class="zhanwei"><p></p></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+        <li class="zhanwei"></li>
+    </ul>
+
+          <div id="foot">
+
+        <button class="thebt" id="sctupian">上传图片</button>
+
+
+        </div>
+
+          <div id="mengban">
+         <form action="{% url 'jade:sc_tupian' %}" enctype="multipart/form-data" method="post">
+             {% csrf_token %}
+
+             <p><input type="file" name="headimg"></p>
+             <p><input type="text" placeholder="给图片起个名字" name="img_title"></p>
+
+             <p><input type="submit" value="提交"></p>
+             <p><input type="button" id="tocancel" value="取消"></p>
+
+         </form>
+     </div>
+
+
+     <div id="mengban2">
+         <form action="">
+{#             {% csrf_token %}#}
+             <p>请输入管理员密码：</p>
+             <p> <input type="password"id="passwd"></p>
+
+             <p class="tips"></p>
+
+             <p><input type="button" value="提交" class="tijiao"></p>
+             <p><input type="button" id="tocancel2" value="取消"></p>
+
+         </form>
+     </div>
+ {% endblock %}
+
+
+
+
+
+{% block sunjs %}
+<script type="application/javascript" src="{% static 'js/tupian.js' %}"></script>
+{% endblock %}
