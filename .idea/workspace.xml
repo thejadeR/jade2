@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f6cb23b-d5ff-439a-8c17-d7199978511d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jade1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jade1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jade1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jade1/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="6f6cb23b-d5ff-439a-8c17-d7199978511d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,11 +102,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myweb/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3124">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -213,7 +217,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="141" />
     <option name="y" value="31" />
     <option name="width" value="1516" />
@@ -235,43 +239,13 @@
             <path>
               <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
               <item name="jade1" type="462c0819:PsiDirectoryNode" />
-              <item name="jade1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jade1" type="462c0819:PsiDirectoryNode" />
-              <item name="myweb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jade1" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
               <item name="jade1" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jade1" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jade1" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jade1" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="newaddmusic" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jade1" type="b2602c69:ProjectViewProjectNode" />
@@ -451,15 +425,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1849" height="864" extended-state="6" />
+    <frame x="67" y="25" width="1849" height="864" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26729986" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26729986" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37991858" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3202171" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.3283582" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18372993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -644,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/upload/newaddmusic/printssql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -758,6 +725,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3124">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
