@@ -356,7 +356,7 @@ CREATE TABLE `myweb_music` (
   `thesrc` varchar(100) NOT NULL,
   `file_size` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -365,7 +365,7 @@ CREATE TABLE `myweb_music` (
 
 LOCK TABLES `myweb_music` WRITE;
 /*!40000 ALTER TABLE `myweb_music` DISABLE KEYS */;
-INSERT INTO `myweb_music` VALUES (1,'双笙 - 我的一个道姑朋友','双笙 - 我的一个道姑朋友.mp3','11.98M'),(2,'情花 - 本兮','情花 - 本兮.mp3','3.67M'),(3,'至上励合 - 棉花糖','至上励合 - 棉花糖.mp3','8.81M'),(4,'五月天 - 你不是真正的快乐','五月天 - 你不是真正的快乐.mp3','11.44M'),(5,'Taylor Swift - Love Story','Taylor Swift - Love Story.mp3','8.99M'),(6,'Taylor Swift - I knew You Were Trouble','Taylor Swift - I knew You Were Trouble.mp3','8.39M'),(7,'Taylor Swift - We Are Never Ever Getting Back Together','Taylor Swift - We Are Never Ever Getting Back Together.mp3','7.45M'),(8,'Taylor Swift - Style','Taylor Swift - Style.mp3','8.82M'),(9,'Taylor Swift - Last Christmas','Taylor Swift - Last Christmas.mp3','8.0M'),(10,'Taylor Swift - The Civil Wars Safe & Sound','Taylor Swift - The Civil Wars Safe & Sound.mp3','9.25M'),(11,'Taylor Swift - Long Live','Taylor Swift - Long Live.mp3','12.13M'),(12,'Taylor Swift - You Belong With Me','Taylor Swift - You Belong With Me.mp3','8.84M'),(13,'Taylor Swift - Back to December','Taylor Swift - Back to December.mp3','11.24M'),(14,'Taylor Swift - Wildest Dreams','Taylor Swift - Wildest Dreams.mp3','8.41M'),(15,'罗百吉 - i miss you','罗百吉 - i miss you.mp3','3.49M'),(16,'Ross Tallanma - Lubov','Ross Tallanma - Lubov.mp3','2.81M'),(17,'StudioEIM - 废弃都市','StudioEIM - 废弃都市.mp3','2.43M'),(18,'跳跳','跳跳.mp3','1.75M'),(19,'cutby Jade - 光明之魂','cutby Jade - 光明之魂.mp3','2.65M');
+INSERT INTO `myweb_music` VALUES (1,'双笙 - 我的一个道姑朋友','双笙 - 我的一个道姑朋友.mp3','11.98M'),(2,'情花 - 本兮','情花 - 本兮.mp3','3.67M'),(3,'至上励合 - 棉花糖','至上励合 - 棉花糖.mp3','8.81M'),(4,'五月天 - 你不是真正的快乐','五月天 - 你不是真正的快乐.mp3','11.44M'),(5,'Taylor Swift - Love Story','Taylor Swift - Love Story.mp3','8.99M'),(6,'Taylor Swift - I knew You Were Trouble','Taylor Swift - I knew You Were Trouble.mp3','8.39M'),(7,'Taylor Swift - We Are Never Ever Getting Back Together','Taylor Swift - We Are Never Ever Getting Back Together.mp3','7.45M'),(8,'Taylor Swift - Style','Taylor Swift - Style.mp3','8.82M'),(9,'Taylor Swift - Last Christmas','Taylor Swift - Last Christmas.mp3','8.0M'),(10,'Taylor Swift - The Civil Wars Safe & Sound','Taylor Swift - The Civil Wars Safe & Sound.mp3','9.25M'),(11,'Taylor Swift - Long Live','Taylor Swift - Long Live.mp3','12.13M'),(12,'Taylor Swift - You Belong With Me','Taylor Swift - You Belong With Me.mp3','8.84M'),(13,'Taylor Swift - Back to December','Taylor Swift - Back to December.mp3','11.24M'),(14,'Taylor Swift - Wildest Dreams','Taylor Swift - Wildest Dreams.mp3','8.41M'),(15,'罗百吉 - i miss you','罗百吉 - i miss you.mp3','3.49M'),(16,'Ross Tallanma - Lubov','Ross Tallanma - Lubov.mp3','2.81M'),(17,'StudioEIM - 废弃都市','StudioEIM - 废弃都市.mp3','2.43M'),(18,'跳跳','跳跳.mp3','1.75M'),(19,'cutby Jade - 光明之魂','cutby Jade - 光明之魂.mp3','2.65M'),(80,'峡谷之音 - 一条姐','峡谷之音 - 一条姐.mp3','0.63M'),(81,'峡谷之音 - 亚索','峡谷之音 - 亚索.mp3','5.6M'),(82,'峡谷之音 - 凯隐和拉亚斯特','峡谷之音 - 凯隐和拉亚斯特.mp3','3.14M'),(83,'峡谷之音 - 剑姬','峡谷之音 - 剑姬.mp3','0.6M'),(84,'峡谷之音 - 卡莎','峡谷之音 - 卡莎.mp3','1.87M'),(85,'峡谷之音 - 吸血鬼','峡谷之音 - 吸血鬼.mp3','3.55M'),(86,'峡谷之音 - 塔莉娅','峡谷之音 - 塔莉娅.mp3','3.06M'),(87,'峡谷之音 - 塞拉斯','峡谷之音 - 塞拉斯.mp3','3.89M'),(88,'峡谷之音 - 大师兄','峡谷之音 - 大师兄.mp3','1.15M'),(89,'峡谷之音 - 小黄毛','峡谷之音 - 小黄毛.mp3','0.35M'),(90,'峡谷之音 - 德莱文屁话真多','峡谷之音 - 德莱文屁话真多.mp3','2.66M'),(91,'峡谷之音 - 战斗之夜','峡谷之音 - 战斗之夜.mp3','2.65M'),(92,'峡谷之音 - 提百万','峡谷之音 - 提百万.mp3','0.21M'),(93,'峡谷之音 - 灌篮高手','峡谷之音 - 灌篮高手.mp3','7.45M'),(94,'峡谷之音 - 烬','峡谷之音 - 烬.mp3','1.92M'),(95,'峡谷之音 - 男刀','峡谷之音 - 男刀.mp3','1.11M'),(96,'峡谷之音 - 男枪','峡谷之音 - 男枪.mp3','1.27M'),(97,'峡谷之音 - 纳尔','峡谷之音 - 纳尔.mp3','1.15M'),(98,'峡谷之音 - 这真让人头大','峡谷之音 - 这真让人头大.mp3','3.3M'),(99,'峡谷之音 - 阿狸','峡谷之音 - 阿狸.mp3','0.48M'),(100,'cutby Jade-四月樱花开','cutby Jade-四月樱花开.mp3','0.35M'),(101,'cutby Jade-敲史莱姆','cutby Jade-敲史莱姆.mp3','0.35M'),(102,'cutby Jade-电玩','cutby Jade-电玩.mp3','0.35M');
 /*!40000 ALTER TABLE `myweb_music` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -402,4 +402,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-03-03 20:47:34
+-- Dump completed on 2019-05-15 14:50:17
